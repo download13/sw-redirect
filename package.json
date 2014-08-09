@@ -1,0 +1,25 @@
+{
+  "name": "sw-redirect",
+  "version": "0.0.0",
+  "description": "Convenience middleware for HTTP 3xx redirects",
+  "main": "redirect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:download13/sw-redirect.git"
+  },
+  "keywords": [
+    "middleware",
+    "redirect",
+    "302",
+    "tiny"
+  ],
+  "author": "Erin Dachtler <download333@gmail.com>",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/download13/sw-redirect/issues"
+  },
+  "homepage": "https://github.com/download13/sw-redirect"
+}
