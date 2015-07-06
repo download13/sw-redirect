@@ -4,7 +4,14 @@
   "description": "Convenience middleware for HTTP 3xx redirects",
   "main": "redirect.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "coverage": "mocha -r blanket -R html-cov > coverage.html"
+  },
+  "config": {
+    "blanket": {
+      "data-cover-only": "redirect.js",
+      "data-cover-never": "node_modules"
+    }
   },
   "repository": {
     "type": "git",
@@ -21,5 +28,11 @@
   "bugs": {
     "url": "https://github.com/download13/sw-redirect/issues"
   },
-  "homepage": "https://github.com/download13/sw-redirect"
+  "homepage": "https://github.com/download13/sw-redirect",
+  "devDependencies": {
+    "blanket": "^1.1.7",
+    "mocha": "^2.2.5",
+    "mw-compose": "0.0.0",
+    "supertest": "^1.0.1"
+  }
 }
